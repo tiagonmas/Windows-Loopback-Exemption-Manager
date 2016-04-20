@@ -38,15 +38,19 @@ namespace Loopback
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDirty) { return; }
+            if (!isDirty) 
+            {
+                Log("nothing to save");
+                return; 
+            }
 
             isDirty = false;
             if (_loop.SaveLoopbackState())
-            { txtStatus.Text = DateTime.Now.ToString("hh:mm:ss.fff") + " saved loopback excemptions";
-                
+            { 
+                Log(" saved loopback excemptions");
             }
             else
-            { txtStatus.Text = DateTime.Now.ToString("hh:mm:ss.fff") + " ERROR SAVING"; }
+            { Log(" ERROR SAVING"); }
         }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
@@ -56,6 +60,7 @@ namespace Loopback
             txtFilter.Text = "";
             cbLoopback.IsChecked = false;
             isDirty = false;
+            Log("refreshed");
         }
 
         private void Window_Closing(object sender, CancelEventArgs e)
@@ -108,6 +113,11 @@ namespace Loopback
         private void dgcbLoop_Click(object sender, RoutedEventArgs e)
         {
             isDirty=true;
+        }
+
+        private void Log(String logtxt) 
+        {
+                txtStatus.Text = DateTime.Now.ToString("hh:mm:ss.fff ") + logtxt;
         }
 
     }
