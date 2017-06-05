@@ -1,3 +1,4 @@
+
 # Project Description
 
 GUI to enable Loopback Exemptions for Universal Windows Apps and Windows 8 Modern UI Apps 
@@ -22,3 +23,5 @@ NetworkIsolationSetAppContainerConfig
 This tool does basically the same thing as Fiddler EnableLoopback Utility available [here](https://www.fiddler2.com/dl/EnableLoopbackUtility.exe)
 
 Thanks to [Eric Lawrence](http://stackoverflow.com/users/126229/ericlaw) for helping with the PInvokes.
+
+Project migrated from https://loopback.codeplex.com/ (May 2017).
