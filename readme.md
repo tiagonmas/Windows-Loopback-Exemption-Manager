@@ -17,6 +17,7 @@ NetworkIsolationFreeAppContainers
 NetworkIsolationGetAppContainerConfig 
 NetworkIsolationSetAppContainerConfig
 
+![Loopback Exemption Manager](http://download-codeplex.sec.s-msft.com/Download?ProjectName=loopback&DownloadId=690728)
 
 This tool does basically the same thing as Fiddler EnableLoopback Utility available [here](https://www.fiddler2.com/dl/EnableLoopbackUtility.exe)
 
