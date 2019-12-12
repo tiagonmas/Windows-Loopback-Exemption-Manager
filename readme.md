@@ -19,7 +19,7 @@ NetworkIsolationSetAppContainerConfig
 
 ![Loopback Exemption Manager](loopbackSampleExecution.png)
 
-This tool does basically the same thing as Fiddler EnableLoopback Utility available [here](https://www.fiddler2.com/dl/EnableLoopbackUtility.exe)
+This tool does basically the same thing as Fiddler EnableLoopback Utility available [here](https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/enableloopbackutility.exe)
 
 Thanks to [Eric Lawrence](http://stackoverflow.com/users/126229/ericlaw) for helping with the PInvokes.
 
